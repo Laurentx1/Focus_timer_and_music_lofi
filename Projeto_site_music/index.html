@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Music</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="video-background">
+    <video autoplay muted loop id="bg-video">
+      <source src="202600-918484146_large.mp4" type="video/mp4">
+      Seu navegador não suporta vídeos HTML5.
+    </video>
+  </div>
+
+  <div class="container">
+    <h1>Focus Music</h1>
+    <p>Concentre-se com músicas relaxantes e produtivas.</p>
+
+    <!-- Timer -->
+    <div class="timer">
+      <span id="minutes">60</span>:<span id="seconds">00</span>
+    </div>
+
+    <!-- Botões de controle -->
+    <div class="controls">
+      <button id="start-timer">Iniciar</button>
+      <button id="reset-timer">Resetar</button>
+    </div>
+
+    <!-- Player do YouTube Music -->
+    <div class="music-player">
+      <iframe id="youtube-music" src="https://www.youtube.com/embed/5qap5aO4i9A?autoplay=1&loop=1&playlist=5qap5aO4i9A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
